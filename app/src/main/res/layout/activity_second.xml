@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_SWE"
+        android:layout_width="358dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/textview_border"
+        android:clickable="true"
+
+        android:hint="Swedish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/text_ENG"
+        android:layout_width="358dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/textview_border"
+        android:clickable="true"
+        android:hint="English"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="304dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Saved translation"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showSavedBtn"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="48dp"
+        android:onClick="showSavedBtn"
+        android:text="Show saved translation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_SWE" />
+</androidx.constraintlayout.widget.ConstraintLayout>
